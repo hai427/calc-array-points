@@ -56,3 +56,12 @@ func average(numArray : [Int]) -> Int {
 func reduce(numArray : [Int], operation : ([Int]) -> [Int]) -> [Int] {
     return operation(numArray)
 }
+
+func add(p1 : (Int, Int), p2 : (Int, Int)) -> (Int, Int) {
+    return ((p1.0 + p2.0), (p1.1 + p2.1))
+}
+
+func subtract(p1 : (Int, Int), p2 : (Int, Int)) -> (Int, Int) {
+    return ((p1.0 - p2.0), (p1.1 - p2.1))
+}
+
