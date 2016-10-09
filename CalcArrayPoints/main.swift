@@ -65,3 +65,30 @@ func subtract(p1 : (Int, Int), p2 : (Int, Int)) -> (Int, Int) {
     return ((p1.0 - p2.0), (p1.1 - p2.1))
 }
 
+func add(p1 : [String : Int], p2 : [String : Int]) -> [String : Int] {
+    return [
+        "x" : p1["x"]! + p2["x"]!,
+        "y" : p1["y"]! + p2["y"]!
+    ]
+}
+
+func subtract(p1 : [String : Int], p2 : [String : Int]) -> [String : Int] {
+    return [
+        "x" : p1["x"]! - p2["x"]!,
+        "y" : p1["y"]! - p2["y"]!
+    ]
+}
+
+func add(p1 : [String : Double], p2 : [String : Double]) -> [String : Double] {
+    return [
+        "x" : p1["x"]! + p2["x"]!,
+        "y" : p1["y"]! + p2["y"]!
+    ]
+}
+
+func subtract(p1 : [String : Double], p2 : [String : Double]) -> [String : Double] {
+    return [
+        "x" : p1["x"]! - p2["x"]!,
+        "y" : p1["y"]! - p2["y"]!
+    ]
+}
